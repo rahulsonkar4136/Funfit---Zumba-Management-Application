@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Batch</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+        
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        
+            
+        }
+
+        h2 {
+			color: #007bff;
+            text-align: center;
+                    }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+        	margin-top: 10px;
+            display: block;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add Batch</h2>
+        
+        <form action="AddBatch" method="post">
+            <div class="form-group">
+                <label for="batchName">Batch Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="Time">Batch Time:</label>
+                <input type="text" class="form-control" id="time" name="time" required>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Add Batch</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (for Bootstrap features) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+           
